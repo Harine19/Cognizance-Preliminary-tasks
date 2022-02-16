@@ -1,0 +1,13 @@
+// This program finds the nth term of the Fibonacci series
+Declare Integer n, first, second, temp, i
+
+Set first = 1
+Set second = 0
+Display "Which term do you want? : "
+Input n
+For i = 1 To n
+    Set temp = first + second
+    Set first = second
+    Set second = temp
+End For
+Display temp
